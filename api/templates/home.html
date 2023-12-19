@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block title%}Home{% endblock%} {% block content%}
+<h2 class="text-secondary">Bem vindo ao meu portifólio!</h2>
+
+<p class="">
+  Olá! Muito obrigado por visitar meu pedaço da internet que chamo de portifólio.
+</p>
+<p class="">
+  Aqui você encontrará um pouco sobre mim, e sobre meus projetos, essa ainda é uma versão bem primitiva deste site, mas possui as
+  informações necessárias!
+</p>
+<p class="">
+  Que tal me conhecer melhor dando uma lida na página <a href="/about">sobre mim?</a>
+</p>
+<p class="">
+  Ou, caso queira conhecer minhas capacitações, recomendo ver o meu <a href="https://github.com/pchagas72">github</a> no botão abaixo!
+</p>
+
+<div class="flex mb-3">
+  <a
+    class="btn btn-primary bg-dark mx-1 text-light mt-2 border border-secondary"
+    href="mailto:{{ email }}"
+    target="_blank"
+    rel="noopener noreferrer">
+    <span class="fa fa-envelope"></span> Meu email
+  </a>
+  <a
+    class="btn btn-primary bg-dark mx-1 text-light mt-2 border border-secondary"
+    data-toggle="Github"
+    href="{{ github }}"
+    target="_blank"
+    rel="noopener noreferrer">
+    <span class="fa fa-github"></span>
+  </a>
+  <!-- - <a
+    class="btn btn-primary bg-dark mx-1 text-light mt-2 border border-secondary"
+    href="{{ linkedin }}"
+    target="_blank"
+    rel="noopener noreferrer">
+    <span class="fa fa-linkedin"></span>
+  </a>
+
+  <a
+    class="btn btn-primary bg-dark mx-1 text-light mt-2 border border-secondary"
+    href="{{ twitter }}"
+    target="_blank"
+    rel="noopener noreferrer">
+    <span class="fa fa-twitter"></span>
+  </a>
+</div> -->
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block title%}About{% endblock%} {% block content%}
+<h1 class="text-secondary" align="">Sobre mim</h1>
+<p>
+  Acima de tudo, eu me descrevo como uma pessoa
+  <strong class="bg-dark rounded">apaixonada.</strong>
+</p>
+<p>
+  Meu nome é Pedro Chagas - muitos me chamam só de
+  <strong class="bg-dark rounded">"Chagas"</strong>, um apaixonado por muitas coisas.
+  Portanto, eu adoraria falar sobre o que amo.
+</p>
+
+<p>
+  Desde meus 9 anos, eu tenho dedicado muito tempo dos meus dias para <strong class="bg-dark rounded">computação</strong>, 
+  desde pequeno sonho em atuar na área, tanto como <strong class="bg-dark rounded">pesquisador</strong>,
+  tanto como trabalhador.
+</p>
+<h4 class="text-secondary">Programação</h4>
+<p>
+  Programação sempre foi uma grande paixão para mim, desenvolver programas e scripts em C, python, rust, go, bash e usando muitas outras linguagens e tecnologias se tornou um hobby para mim desde cedo. 
+  <br> Mas isto você pode ver no meu <a href="https://github.com/pchagas72">GitHub</a>.
+</p>
+<h4 class="text-secondary">Robótica</h4>
+<p>
+  Só programação não era o suficiente, para me divertir eu quis implementar o código que via no mundo 3D.<br>
+  Foi para isso que aprendi a desenvolver para arduíno e raspberry pi, no processo me tornando presidente do clube de robótica do colégio militar do recife.<br>
+  Por causa disso, participei de competições de robótica nacionais. Foi assim que fiz uma viagem que mudou a minha vida, onde fui para Brasília com minha equipe.
+</p>
+<img
+  src="{{ url_for('static', filename='images/robotics-team.png') }}"
+  class="figure-img"
+  alt="{{your_name}}"
+  width="500"
+  height="300" />
+<h4 class="text-secondary">Pesquisas, computação quântica e redes neurais</h4>
+<p>
+  Agora sim, quatro anos como pesquisador que me formaram como o ser humano que sou hoje em dia. <br>
+  Durante quatro anos, participei de duas pesquisas de iniciação científica do PIBIC-EM, ganhando prêmios de melhor pesquisa e destaques! <br>
+  O foco da primeira pesquisa foi de redes neurais convolucionais, onde eu desenvolvi diversos modelos de rede neural e apliquei diversas bibliotecas de visão computacional, principalmente Tensorflow, Keras, Numpy, Pandas, Scipy e opencv. <br>
+  Já a segunda pesquisa, teve como foco a minha atual maior paixão em relação às pesquisas, <strong class="bg-dark rounded"> machine learning e computação quântica</strong>, onde eu apliquei modelos
+  de redes neurais utilizando computação quântica, para isso, utilizei a linguagem python e diversas bibliotecas, entre elas, qiskit e pytorch.
+</p>
+<h4 class="text-secondary">Linux e servidores</h4>
+<p>
+  Hoje em dia, sem dúvida alguma, a atividade que eu mais passo tempo realizando é personalizando, criando e inovando
+  com sistemas operacionais, principalmente com linux e BSD's. Atualmente uso uma build com kernel customizado do gentoo
+  linux em dual boot com uma build do openBSD, aproveitando do melhor dos dois mundos.
+</p>
+<img
+  src="{{ url_for('static', filename='images/my-desktop.png') }}"
+  class="figure-img"
+  alt="{{your_name}}"
+  width="600"
+  height="340" />
+<h4 class="text-secondary">Saindo um pouco de computação</h4>
+<p>
+  Além da computação, sou um grande amante de filosofia, matemática e literatura no geral, muito do dinheiro que eu ganho
+  como freelancer e professor de violão clássico acaba sendo gasto nos clássicos de Dostoiévski e Hemingway. <br>
+  Aproveitando que já foi citado, sou um grande amante da música, tendo grande preferência pelo violão erudito, instrumento
+  maravilhoso que faz parte de todos os dias da minha vida desde que comecei a tocar.
+</p>
+<br>
+<p>Enfim, é difícil resumir anos de vida em uma só página, você pode me conhecer mais vendo os meus <a href="/projects">projetos!</a></p>
+{% endblock %}
